@@ -1,0 +1,22 @@
+{
+  "name": "api",
+  "version": "0.1.0",
+  "description": "An api bootstrapped with react-express-nginx-boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "prestart": "npm run ./build",
+    "start": "node build.js",
+    "build": "npm run clean && babel-node ./ -d -o build",
+    "dev": "NODE_ENV='production' babel-node index.js",
+    "clean": "rm build"
+  },
+  "keywords": [],
+  "author": "Charles Kenney",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.15.4"
+  },
+  "devDependencies": {
+    "babel-preset-es2015": "^6.24.1"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "name": "react-express-nginx-boilerplate",
+  "version": "0.0.1",
+  "description": "A boilerplate for isomorphic web applications with react, express and nginx.",
+  "main": "index.js",
+  "scripts": {
+    "bootstrap": "sudo bash ./bin/bootstrap.sh",
+    "start": "bash ./bin/start.sh",
+    "build": "bash ./bin/build.sh",
+    "dev": "bash ./bin/dev.sh",
+    "deps": "bash ./bin/deps.sh",
+    "rmdeps": "bash ./bin/rmdeps.sh",
+    "clean": "bash ./bin/clean.sh"
+  },
+  "author": "Charles Kenney",
+  "license": "MIT",
+  "dependencies": {
+    "concurrently": "^3.5.0"
+  }
+}
