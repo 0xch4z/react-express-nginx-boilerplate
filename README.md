@@ -2,7 +2,7 @@
 A boilerplate for creating isomorphic web applications using react, nextjs, express, and nginx.
 
 ### How it works
-The boilerplate contains two seperated node applications as their own npm packages: the React app and the Express api. To run the app, your run the [scripts](#scripts) of the root npm package. When you're ready to [deploy](Deploying-to-production-server) the app to your production server, run the bootstrap script to easily bootstrap a simple nginx reverse proxy config to your react app and your express api.
+The boilerplate contains two seperated node applications as their own npm packages: the React app and the Express api. To run the app, run the [scripts](#scripts) of the root npm package. When you're ready to [deploy](Deploying-to-production-server) the app to your production server, run the bootstrap script to easily bootstrap a simple nginx reverse proxy config to your react app and your express api.
 
 ### Developing your application
 1. Clone the repository.
