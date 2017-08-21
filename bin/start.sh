@@ -1,5 +1,8 @@
 #!/usr/bin/env bash
 
-# run each
-( cd api; npm start ) & 
-( cd client; npm start ) &
+# scripts
+api="( cd api; npm start )"
+client="( cd client; npm start )"
+
+# run both
+./node_modules/.bin/concurrently --kill-others "$api" "$client"

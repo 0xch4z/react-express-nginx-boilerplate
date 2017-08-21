@@ -1,5 +1,9 @@
 #!/usr/bin/env bash
 
-# run each
-( cd api; npm run build ) & 
-( cd client; npm run build ) &
+# build api
+( cd api; npm run build )
+
+# build client
+( cd client; npm run build )
+
+echo "Built api and client"

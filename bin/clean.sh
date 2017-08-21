@@ -5,3 +5,5 @@
 
 # clean client
 ( cd client; npm run clean )
+
+echo "Cleaned api and client"

@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "bootstrap": "sudo bash ./bin/bootstrap.sh",
-    "start": "bash ./bin/start.sh",
+    "start": "./node_modules/.bin/pm2 start ./bin/start.sh",
+    "stop": "./node_modules/.bin/pm2 stop all",
+    "monitor": "./node_modules/.bin/pm2 monitor",
+    "restart": "bash ./bin/restart.sh",
+    "list": "bash ./bin/list.sh",
     "build": "bash ./bin/build.sh",
     "dev": "bash ./bin/dev.sh",
     "deps": "bash ./bin/deps.sh",
@@ -15,6 +19,8 @@
   "author": "Charles Kenney",
   "license": "MIT",
   "dependencies": {
-    "concurrently": "^3.5.0"
+    "concurrently": "^3.5.0",
+    "forever": "^0.15.3",
+    "pm2": "^2.6.1"
   }
 }

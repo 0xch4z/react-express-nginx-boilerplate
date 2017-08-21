@@ -5,3 +5,5 @@
 
 # delete client deps
 ( cd client; rm -rf node_modules )
+
+echo "Removed all node modules"
