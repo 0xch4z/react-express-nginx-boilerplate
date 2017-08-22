@@ -8,15 +8,6 @@ then
   exit
 fi
 
-# check for nginx
-if [ -d /etc/nginx ] && [ -x /etc/nginx ]
-then
-  echo "You must first install nginx. run:"
-  echo "sudo apt-get update && sudo apt-get install Nginx"
-  sleep 2
-  exit
-fi
-
 # write nginx conf
 cat >/etc/nginx/sites-available/app <<EOF
 server {
