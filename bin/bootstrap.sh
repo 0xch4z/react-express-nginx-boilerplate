@@ -9,7 +9,7 @@ then
 fi
 
 # check for nginx
-if [ -d "/etc/nginx/$DIRECTORY" ]
+if [ -d /etc/nginx ] && [ -x /etc/nginx ]
 then
   echo "You must first install nginx. run:"
   echo "sudo apt-get update && sudo apt-get install Nginx"
