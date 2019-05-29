@@ -1,4 +1,7 @@
 ## React Express Nginx Boilerplate
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/Charliekenney23/react-express-nginx-boilerplate.svg)](https://greenkeeper.io/)
+
 A boilerplate for creating isomorphic web applications using NextJS, React, express, and nginx.
 
 ### How it works
